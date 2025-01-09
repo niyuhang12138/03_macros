@@ -37,3 +37,13 @@ impl Future for MyFut {
         }
     }
 }
+
+#[macro_export]
+macro_rules! my_ready {
+    ($expr:expr) => {
+        match $expr {
+            std::task::Poll::Ready(val) => val,
+            std::task::Poll::Pending => return std::task::Poll::Pending,
+        }
+    };
+}

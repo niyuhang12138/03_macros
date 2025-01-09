@@ -1,5 +1,4 @@
 use anyhow::{anyhow, Result};
-use macros::my_try;
 
 fn main() -> Result<()> {
     let f1 = my_try!(f1());
@@ -19,4 +18,15 @@ fn f2() -> Result<String> {
 }
 fn f3() -> Result<String> {
     Err(anyhow!("f3".to_string()))
+}
+
+// ? operator. How to simulate it?
+#[macro_export]
+macro_rules! my_try {
+    ($expr:expr) => {
+        match $expr {
+            Ok(val) => val,
+            Err(err) => return Err(err.into()),
+        }
+    };
 }
