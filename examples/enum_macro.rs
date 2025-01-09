@@ -1,8 +1,8 @@
 use macros::EnumFrom;
 #[allow(dead_code)]
 #[derive(Debug, EnumFrom)]
-enum Direction {
-    Up(DirectionUp),
+enum Direction<T> {
+    Up(DirectionUp<T>),
     Down,
     Left(u32),
     Right(u32, u32),
@@ -10,17 +10,17 @@ enum Direction {
 
 #[allow(dead_code)]
 #[derive(Debug)]
-struct DirectionUp {
-    speed: u32,
+struct DirectionUp<T> {
+    speed: T,
 }
 
 fn main() {
-    let up: Direction = DirectionUp::new(42).into();
+    let up: Direction<u32> = DirectionUp::new(42).into();
     println!("up: {up:?}")
 }
 
-impl DirectionUp {
-    fn new(speed: u32) -> Self {
+impl<T> DirectionUp<T> {
+    fn new(speed: T) -> Self {
         Self { speed }
     }
 }

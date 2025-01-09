@@ -11,3 +11,5 @@
 $ cargo install cargo-expand
 $ cargo expand --example enum_macro
 ```
+
+![image-20250109143558492](assets/image-20250109143558492.png)

@@ -1,0 +1,231 @@
+DeriveInput {
+    attrs: [
+        Attribute {
+            pound_token: Pound,
+            style: AttrStyle::Outer,
+            bracket_token: Bracket,
+            meta: Meta::List {
+                path: Path {
+                    leading_colon: None,
+                    segments: [
+                        PathSegment {
+                            ident: Ident {
+                                ident: "allow",
+                                span: #0 bytes(24..29),
+                            },
+                            arguments: PathArguments::None,
+                        },
+                    ],
+                },
+                delimiter: MacroDelimiter::Paren(
+                    Paren,
+                ),
+                tokens: TokenStream [
+                    Ident {
+                        ident: "dead_code",
+                        span: #0 bytes(30..39),
+                    },
+                ],
+            },
+        },
+    ],
+    vis: Visibility::Inherited,
+    ident: Ident {
+        ident: "Direction",
+        span: #0 bytes(74..83),
+    },
+    generics: Generics {
+        lt_token: Some(
+            Lt,
+        ),
+        params: [
+            GenericParam::Type(
+                TypeParam {
+                    attrs: [],
+                    ident: Ident {
+                        ident: "T",
+                        span: #0 bytes(84..85),
+                    },
+                    colon_token: None,
+                    bounds: [],
+                    eq_token: None,
+                    default: None,
+                },
+            ),
+        ],
+        gt_token: Some(
+            Gt,
+        ),
+        where_clause: None,
+    },
+    data: Data::Enum {
+        enum_token: Enum,
+        brace_token: Brace,
+        variants: [
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Up",
+                    span: #0 bytes(93..95),
+                },
+                fields: Fields::Unnamed {
+                    paren_token: Paren,
+                    unnamed: [
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: None,
+                            colon_token: None,
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "DirectionUp",
+                                                span: #0 bytes(96..107),
+                                            },
+                                            arguments: PathArguments::AngleBracketed {
+                                                colon2_token: None,
+                                                lt_token: Lt,
+                                                args: [
+                                                    GenericArgument::Type(
+                                                        Type::Path {
+                                                            qself: None,
+                                                            path: Path {
+                                                                leading_colon: None,
+                                                                segments: [
+                                                                    PathSegment {
+                                                                        ident: Ident {
+                                                                            ident: "T",
+                                                                            span: #0 bytes(108..109),
+                                                                        },
+                                                                        arguments: PathArguments::None,
+                                                                    },
+                                                                ],
+                                                            },
+                                                        },
+                                                    ),
+                                                ],
+                                                gt_token: Gt,
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
+                discriminant: None,
+            },
+            Comma,
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Down",
+                    span: #0 bytes(117..121),
+                },
+                fields: Fields::Unit,
+                discriminant: None,
+            },
+            Comma,
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Left",
+                    span: #0 bytes(127..131),
+                },
+                fields: Fields::Unnamed {
+                    paren_token: Paren,
+                    unnamed: [
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: None,
+                            colon_token: None,
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u32",
+                                                span: #0 bytes(132..135),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
+                discriminant: None,
+            },
+            Comma,
+            Variant {
+                attrs: [],
+                ident: Ident {
+                    ident: "Right",
+                    span: #0 bytes(142..147),
+                },
+                fields: Fields::Unnamed {
+                    paren_token: Paren,
+                    unnamed: [
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: None,
+                            colon_token: None,
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u32",
+                                                span: #0 bytes(148..151),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                        Comma,
+                        Field {
+                            attrs: [],
+                            vis: Visibility::Inherited,
+                            mutability: FieldMutability::None,
+                            ident: None,
+                            colon_token: None,
+                            ty: Type::Path {
+                                qself: None,
+                                path: Path {
+                                    leading_colon: None,
+                                    segments: [
+                                        PathSegment {
+                                            ident: Ident {
+                                                ident: "u32",
+                                                span: #0 bytes(153..156),
+                                            },
+                                            arguments: PathArguments::None,
+                                        },
+                                    ],
+                                },
+                            },
+                        },
+                    ],
+                },
+                discriminant: None,
+            },
+            Comma,
+        ],
+    },
+}
