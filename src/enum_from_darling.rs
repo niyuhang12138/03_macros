@@ -33,8 +33,6 @@ pub(crate) fn process_enum_from_darling(input: DeriveInput) -> TokenStream {
     else {
         panic!("EnumFromDarling only works on enums");
     };
-    println!("ident: {ident:#?}, generics: {generics:#?}");
-    println!("data: {data:#?}");
 
     let from_impls = data.iter().map(|variant| {
         let var = &variant.ident;

@@ -19,7 +19,6 @@ struct AutoDerefInto {
 struct AutoDerefFieldsInfo {
     ident: Option<syn::Ident>,
     ty: syn::Type,
-    // attrs: Vec<syn::Attribute>,
 }
 
 pub(crate) fn process_auto_deref(input: DeriveInput) -> TokenStream {
@@ -72,8 +71,4 @@ pub(crate) fn process_auto_deref(input: DeriveInput) -> TokenStream {
     quote! {
       #(#code)*
     }
-}
-
-pub(crate) fn process_auto_debug(_input: DeriveInput) -> TokenStream {
-    quote! {}
 }
