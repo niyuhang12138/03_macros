@@ -1,0 +1,182 @@
+ident: Ident {
+    ident: "Direction",
+    span: #0 bytes(88..97),
+}
+
+generics: Generics {
+    lt_token: Some(
+        Lt,
+    ),
+    params: [
+        GenericParam::Type(
+            TypeParam {
+                attrs: [],
+                ident: Ident {
+                    ident: "T",
+                    span: #0 bytes(98..99),
+                },
+                colon_token: None,
+                bounds: [],
+                eq_token: None,
+                default: None,
+            },
+        ),
+    ],
+    gt_token: Some(
+        Gt,
+    ),
+    where_clause: None,
+}
+
+data: [
+    EnumVariants {
+        ident: Ident {
+            ident: "Up",
+            span: #0 bytes(107..109),
+        },
+        fields: Fields {
+            style: Tuple,
+            fields: [
+                EnumVariantFields {
+                    ty: Type::Path {
+                        qself: None,
+                        path: Path {
+                            leading_colon: None,
+                            segments: [
+                                PathSegment {
+                                    ident: Ident {
+                                        ident: "DirectionUp",
+                                        span: #0 bytes(110..121),
+                                    },
+                                    arguments: PathArguments::AngleBracketed {
+                                        colon2_token: None,
+                                        lt_token: Lt,
+                                        args: [
+                                            GenericArgument::Type(
+                                                Type::Path {
+                                                    qself: None,
+                                                    path: Path {
+                                                        leading_colon: None,
+                                                        segments: [
+                                                            PathSegment {
+                                                                ident: Ident {
+                                                                    ident: "T",
+                                                                    span: #0 bytes(122..123),
+                                                                },
+                                                                arguments: PathArguments::None,
+                                                            },
+                                                        ],
+                                                    },
+                                                },
+                                            ),
+                                        ],
+                                        gt_token: Gt,
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                },
+            ],
+            span: Some(
+                #0 bytes(109..125),
+            ),
+            __nonexhaustive: (),
+        },
+    },
+    EnumVariants {
+        ident: Ident {
+            ident: "Down",
+            span: #0 bytes(131..135),
+        },
+        fields: Fields {
+            style: Unit,
+            fields: [],
+            span: Some(
+                #6 bytes(65..80),
+            ),
+            __nonexhaustive: (),
+        },
+    },
+    EnumVariants {
+        ident: Ident {
+            ident: "Left",
+            span: #0 bytes(141..145),
+        },
+        fields: Fields {
+            style: Tuple,
+            fields: [
+                EnumVariantFields {
+                    ty: Type::Path {
+                        qself: None,
+                        path: Path {
+                            leading_colon: None,
+                            segments: [
+                                PathSegment {
+                                    ident: Ident {
+                                        ident: "u32",
+                                        span: #0 bytes(146..149),
+                                    },
+                                    arguments: PathArguments::None,
+                                },
+                            ],
+                        },
+                    },
+                },
+            ],
+            span: Some(
+                #0 bytes(145..150),
+            ),
+            __nonexhaustive: (),
+        },
+    },
+    EnumVariants {
+        ident: Ident {
+            ident: "Right",
+            span: #0 bytes(156..161),
+        },
+        fields: Fields {
+            style: Tuple,
+            fields: [
+                EnumVariantFields {
+                    ty: Type::Path {
+                        qself: None,
+                        path: Path {
+                            leading_colon: None,
+                            segments: [
+                                PathSegment {
+                                    ident: Ident {
+                                        ident: "u32",
+                                        span: #0 bytes(162..165),
+                                    },
+                                    arguments: PathArguments::None,
+                                },
+                            ],
+                        },
+                    },
+                },
+                EnumVariantFields {
+                    ty: Type::Path {
+                        qself: None,
+                        path: Path {
+                            leading_colon: None,
+                            segments: [
+                                PathSegment {
+                                    ident: Ident {
+                                        ident: "u32",
+                                        span: #0 bytes(167..170),
+                                    },
+                                    arguments: PathArguments::None,
+                                },
+                            ],
+                        },
+                    },
+                },
+            ],
+            span: Some(
+                #0 bytes(161..171),
+            ),
+            __nonexhaustive: (),
+        },
+    },
+]
