@@ -6,3 +6,8 @@
 ![image-20250109092014665](assets/image-20250109092014665.png)
 
 ![image-20250109101915163](assets/image-20250109101915163.png)
+
+```bash
+$ cargo install cargo-expand
+$ cargo expand --example enum_macro
+```
